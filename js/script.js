@@ -1,8 +1,3 @@
-//User will enter their City in this form
-//Show the current city being searched
-//Show today's minimum temperature
-//Show today's maximum temperature
-
 /*----- constants -----*/
 
 /*----- app's state (variables) -----*/
@@ -17,8 +12,8 @@ const $input = $('input[type="text"]')
 $('form').on('submit', handleGetData)
 /*----- functions -----*/
 function handleGetData(event) {
-    event.preventDefault(); //Prevents the default behavior of a form submission
-    if($input.val()=== "") return; // No Data!
+    event.preventDefault(); 
+    if($input.val()=== "") return; 
    userInput = ($input.val())
    $input.val(""); //clear input
     $.ajax({
